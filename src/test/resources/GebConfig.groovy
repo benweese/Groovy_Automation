@@ -42,4 +42,4 @@ environments {
 
 // To run the tests with all browsers just run “./gradlew test”
 
-baseUrl = "http://benweese.dev"
+baseUrl = "https://react-shopping-cart-67954.firebaseapp.com/"

@@ -1,12 +1,12 @@
 package pages
 
 import geb.Page
-import modules.SideMenuModule
+import modules.SizeMenuModule
 
-class BenWeeseDevHome extends Page{
+class HomePage extends Page{
     static at = { title == "Home - BenWeese.Dev" }
 
     static content = {
-        sideMenu { module SideMenuModule }
+        sizeMenu { module SizeMenuModule }
     }
 }
