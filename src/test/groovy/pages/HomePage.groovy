@@ -1,6 +1,7 @@
 package pages
 
 import geb.Page
+import modules.ShelfModule
 import modules.SizeMenuModule
 
 class HomePage extends Page{
@@ -8,5 +9,6 @@ class HomePage extends Page{
 
     static content = {
         sizeMenu { module SizeMenuModule }
+        shirtMenu { module ShelfModule}
     }
 }

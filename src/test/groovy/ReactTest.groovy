@@ -6,7 +6,7 @@ class ReactTest extends GebSpec {
 
     static Page page
 
-   def "Can get to Software Testing"(){
+   def "Can get XS shirt"(){
        given:
        to HomePage
        page = at HomePage
@@ -17,9 +17,11 @@ class ReactTest extends GebSpec {
        then:
        page.sizeMenu.sizes[0].click()
 
-       then:
-       at HomePage
+       when:
+       page.shirtMenu.shirts[0].displayed
 
+       then:
+       !page.shirtMenu.shirts[1].displayed
    }
 
 }
