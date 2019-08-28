@@ -22,4 +22,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Run Test
-      run: ./gradlew chromeHeadless
+      run: ./gradlew chromeHeadlessTest
