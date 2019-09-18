@@ -28,4 +28,4 @@ jobs:
        brew cask install google-chrome
        brew cleanup
     - name: Run Test
-      run: ./gradlew chrome
+      run: ./gradlew chromeTest
