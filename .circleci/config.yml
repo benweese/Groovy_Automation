@@ -12,7 +12,7 @@ jobs:
 
   test:
     docker:
-      - image: benweese/java-automation
+      - image: benweese/groovy_automation
         environment:
           GRADLE_OPTS: -Xmx1024m -XX:MaxMetaspaceSize=256m
           GRADLE_USER_HOME: .gradle-home
