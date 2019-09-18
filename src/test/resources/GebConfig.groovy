@@ -53,7 +53,7 @@ environments {
             chromeOptions.addArguments("--window-size=1400x1200")
             chromeOptions.addArguments("--disable-extensions")
             chromeOptions.addArguments('headless')
-            ChromeDriverManager.chromedriver().setup()
+            System.setProperty('webdriver.chrome.driver', '/usr/bin/chromedriver')
             new ChromeDriver(chromeOptions)
         }
     }
