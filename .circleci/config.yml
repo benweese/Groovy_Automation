@@ -16,8 +16,7 @@ jobs:
       - checkout
       - run:
           name: Analyze on SonarCloud
-          command: gradle sonarqube
-
+          command: gradlew build sonarqube
   test:
     docker:
       - image: benweese/groovy_automation
